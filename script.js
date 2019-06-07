@@ -1,5 +1,5 @@
 let input = document.querySelectorAll('.input');
-
+let button = document.querySelector('.button').textContent = 'submit'
 
 
 function placehoder(input) {
