@@ -32,7 +32,6 @@ function submitButton(evt) {
     input[0].value = ''
     input[1].value = ''
 
-
 }
 submitForm(input[0])
 submitForm(input[1])
