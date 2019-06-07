@@ -1,16 +1,12 @@
 let input = document.querySelectorAll('.input');
 let button = document.querySelector('.button').textContent = 'submit'
 
-
-function placehoder(input) {
+function submitForm(input) {
     let name = input.getAttribute('name')
-
     test(input, name)
-
     input.addEventListener('focus', () => {
         input.setAttribute('placeholder', '')
     })
-
     input.addEventListener('blur', () => test(input, name))
 }
 
@@ -24,5 +20,5 @@ function test(input, name) {
     }(name))
 }
 
-placehoder(input[0])
-placehoder(input[1])
+submitForm(input[0])
+submitForm(input[1])
