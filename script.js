@@ -25,9 +25,13 @@ function test(input, name) {
 button.addEventListener('click', submitButton)
 
 function submitButton(evt) {
+    evt.preventDefault()
     let inputValueOne = input[0].value
     let inputValueTwo = input[1].value
-    return console.log('nothing?', inputValueOne, inputValueTwo)
+    console.log('nothing?', ` inputone: ${inputValueOne}, inputtwo: ${inputValueTwo}`)
+    inputValueOne = ''
+    inputValueTwo = ''
+
 }
 submitForm(input[0])
 submitForm(input[1])
