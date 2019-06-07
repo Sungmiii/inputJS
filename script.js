@@ -29,8 +29,9 @@ function submitButton(evt) {
     let inputValueOne = input[0].value
     let inputValueTwo = input[1].value
     console.log('nothing?', ` inputone: ${inputValueOne}, inputtwo: ${inputValueTwo}`)
-    inputValueOne = ''
-    inputValueTwo = ''
+    input[0].value = ''
+    input[1].value = ''
+
 
 }
 submitForm(input[0])
